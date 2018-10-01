@@ -13,6 +13,7 @@ IPv6_fragment,ipv6.nxt == 44
 IPv4_fragment,ip.flags.mf == 1 || ip.frag_offset > 0
 DHCP,bootp
 DHCPv6,udp.dstport == 547
+DDHCPD,ipv6.addr eq ff02::1234
 XID,llc.control == 0x00af
 BJNP,bjnp
 ws-discovery,udp.dstport == 3702
