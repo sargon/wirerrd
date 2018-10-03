@@ -1,0 +1,12 @@
+[Unit]
+Description=wirerrd exporter
+
+[Service]
+Type=oneshot
+User=wirerrd
+Group=wirerrd
+WorkingDirectory=/path/to/wirerrd
+ExecStart=/path/to/wirerrd/wirerrd export -i /path/to/rrd -o /path/to/public_html_symlink
+
+[Install]
+WantedBy=multi-user.target
